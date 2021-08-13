@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.titulo {
+    color: rgb(3, 44, 51);
+    font-size: 3.5em;
+    padding: 50px;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.navbar .logo {
+    width: 60px;
+    grid-column: 2 / 3;
+    height: 60px;
+}
+
+.navbar .menu {
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+.navbar .menu-bar {
+    grid-column: 8 / 9;
+    color: white;
+    margin-top: 20px;
+    display: none;
+
+}
+
+.navbar .menu a:hover {
+    background: rgb(3, 44, 51);
+}
+
+
+/***********************CONTAINER******************/
+
+.fondo {
+
+    background-image: linear-gradient(to top, rgba(35, 34, 37, 0.466) 0%, rgba(46, 43, 45, 0.445) 100%), url(../IMG/te-nguyen-Wt7XT1R6sjU-unsplash.jpg);
+    background-size: cover;
+    background-position: initial;
+    /*background: rgb(184, 190, 195);*/
+
+}
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 1em;
+    font-weight: 300;
+
+}
+
+
+/*************************FOOTER*************************************/
+
+.footer {
+    display: grid;
+    height: 150px;
+    align-items: center;
+    background: black;
+    color: white;
+    grid-template-areas:
+        "listen-online""follow-me""social-network";
+}
+
+.footer .listen-online {
+    grid-template-areas: listen-online;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(3, 44, 51);
+    color: white;
+    grid-template-areas: "listen-online""follow-me""social-network";
+    padding: 26px;
+}
+
+.footer .listen-online .fas {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer .listen-online a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.social-network {
+    text-align: center;
+}
+
+.footer .social-network .fab {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer .social-network a {
+    text-decoration: none;
+    color: white;
+}
+
+/*************************RESPONSIVE*************/
+@media screen and (max-width:1120px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .menu-bar {
+        display: block;
+        grid-column: 8 / 9;
+        font-size: 2em;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        right: 0px;
+        top: 5%;
+        display: flex;
+        flex-direction: column;
+        width: 35vw;
+        height: 50%;
+        transition: transform .3s ease-in-out;
+        transform: translate(110%);
+        z-index: 100;
+        overflow: hidden;
+        background: black;
+        color: white;
+        align-items: center;
+        border-radius: 0 0 0 50px;
+    }
+
+    .navbar .menu-toggle {
+        transform: translateX(0%);
+
+    }
+
+    .hero .info-content {
+        grid-column: 2 / 10;
+        grid-row: 2 / 8;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+
+}
