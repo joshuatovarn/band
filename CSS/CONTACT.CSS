@@ -291,5 +291,18 @@ button {
         font-size: 3.5em;
     }
 
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .form {
+        width: 40%;
+    }
+
+    .button {
+        width: 25%;
+    }
+
 
 }
