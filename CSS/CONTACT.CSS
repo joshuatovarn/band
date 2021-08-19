@@ -74,7 +74,6 @@ h1 {
     background-size: cover;
     background-position: center;
 
-
 }
 
 .content {
@@ -103,11 +102,100 @@ p {
     text-align: center;
 }
 
-.pmaps{
+.pmaps {
     text-align: right;
     font-size: 1em;
     font-weight: 300;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 40px 0;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .group {
+    position: relative;
+    margin: 45px;
+}
+
+input {
+    background: none;
+    color: black;
+    font-size: 1em;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+    color: black;
+
+}
+
+label {
+    color: black;
+    font-size: 1em;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 0.9em;
+    color: rgb(3, 44, 51);
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+input:focus~.barra::before {
+    width: 100%;
+
+}
+
+button {
+    background: rgb(3, 44, 51);
+    display: block;
+    border: none;
+    width: 10%;
+    margin: auto;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 25px;
+}
+
 
 /*************************FOOTER*************************************/
 
