@@ -54,6 +54,7 @@ h1 {
     border: 2px solid black;
     border-radius: 25px;
     padding: 8px;
+    transition: all .3s ease-in-out;
 }
 
 .navbar .menu-bar {
@@ -194,6 +195,15 @@ button {
     cursor: pointer;
     font-size: 16px;
     border-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.icons {
+    transition: all .3s ease;
+}
+
+.icons:hover {
+    color: rgb(3, 44, 51);
 }
 
 

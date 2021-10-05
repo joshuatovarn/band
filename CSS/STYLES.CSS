@@ -40,6 +40,7 @@ body {
     border: 2px solid black;
     border-radius: 25px;
     padding: 8px;
+    transition: all .3s ease-in-out;
 }
 
 .navbar .menu-bar {
@@ -96,6 +97,7 @@ body {
     border-radius: 25px;
     padding: 10px 10px;
     margin-top: 20px;
+    transition: all .3s ease-in-out;
 }
 
 .btn:hover {
@@ -146,6 +148,14 @@ body {
 .footer .social-network a {
     text-decoration: none;
     color: white;
+}
+
+.icons {
+    transition: all .3s ease;
+}
+
+.icons:hover {
+    color: rgb(3, 44, 51);
 }
 
 
