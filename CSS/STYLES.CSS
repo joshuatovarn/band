@@ -94,7 +94,7 @@ body {
     color: white;
 }
 
-.footer .listen-online a:hover{
+.footer .listen-online a:hover {
     opacity: 0.75;
 }
 
@@ -120,8 +120,12 @@ body {
     color: rgb(3, 44, 51);
 }
 
-@media screen and (max-width:1120px) {
+@media screen and (max-width:768px) {
     .hero h1 {
         font-size: 3.5em;
+    }
+
+    .text-right {
+        text-align: right;
     }
 }
