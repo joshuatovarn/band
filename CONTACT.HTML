@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Lorem, ipsum</title>
     <link rel="stylesheet" href="CSS/CONTACT.CSS">
+    <link rel="stylesheet" href="CSS/menu.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="shortcut icon" href="IMG/LOGO3.png">
@@ -15,16 +16,22 @@
 
 <body>
 
-    <header>
-        <nav class="navbar">
-            <img src="IMG/LOGO3.png" class="logo" alt="dani rivero logo">
-            <ul class="menu" id="menu">
-                <li><a href="file:///C:/Users/Usuario/Desktop/BAND/band/INDEX.HTML">HOME</a></li>
-                <li><a href="file:///C:/Users/Usuario/Desktop/BAND/band/THEBAND.HTML">THE BAND</a></li>
-                <li><a href="file:///C:/Users/Usuario/Desktop/BAND/band/GALLERY.HTML#">MEDIA</a></li>
-                <li><a href="file:///C:/Users/Usuario/Desktop/BAND/band/CONTACT.HTML">CONTACT</a></li>
-            </ul>
-            <div class="menu-bar" id="menu-bar">
+    <header class=nav-bar>
+        <nav class="nav container-nav">
+            <div>
+                <img src="/band/IMG/LOGO3.png" alt="" width="25%">
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>

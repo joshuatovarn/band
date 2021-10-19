@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --first-color: rgb(3, 44, 51);
+}
+
 * {
     margin: 0;
     padding: 0%;
@@ -8,54 +14,8 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #000;
 }
-
-.navbar {
-    background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-}
-
-.navbar .logo {
-    width: 60px;
-    grid-column: 2 / 3;
-    height: 60px;
-}
-
-.navbar .menu {
-    grid-column: 4 / 7;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar .menu li {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.navbar .menu a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 8px;
-    transition: all .3s ease-in-out;
-}
-
-.navbar .menu-bar {
-    grid-column: 8 / 9;
-    color: white;
-    margin-top: 20px;
-    display: none;
-
-}
-
-.navbar .menu a:hover {
-    background: rgb(3, 44, 51);
-}
-
-/**********************/
 
 .hero {
     height: 80vh;
@@ -69,13 +29,13 @@ body {
 }
 
 .hero .info-content {
-    grid-column: 7 / 10;
-    grid-row: 3 / 10;
+    grid-column: 2 / 10;
+    grid-row: 2 / 8;
     color: white;
 }
 
 .hero h1 {
-    font-size: 5em;
+    font-size: 6vw;
     color: rgb(3, 44, 51);
 }
 
@@ -94,8 +54,7 @@ body {
     background: none;
     color: white;
     border: 2px solid rgb(3, 44, 51);
-    border-radius: 25px;
-    padding: 10px 10px;
+    padding: .5rem;
     margin-top: 20px;
     transition: all .3s ease-in-out;
 }
@@ -112,7 +71,7 @@ body {
     background: black;
     color: white;
     grid-template-areas:
-        "listen-online""follow-me""social-network";
+        "listen-online";
 }
 
 .footer .listen-online {
@@ -121,13 +80,13 @@ body {
     justify-content: center;
     background-color: rgb(3, 44, 51);
     color: white;
-    grid-template-areas: "listen-online""follow-me""social-network";
-    padding: 26px;
+    grid-template-areas: "listen-online";
+    padding: 2rem;
 }
 
 .footer .listen-online .fas {
     font-size: 1.5em;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 .footer .listen-online a {
@@ -135,6 +94,9 @@ body {
     color: white;
 }
 
+.footer .listen-online a:hover{
+    opacity: 0.75;
+}
 
 .social-network {
     text-align: center;
@@ -142,7 +104,7 @@ body {
 
 .footer .social-network .fab {
     font-size: 1.5em;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 .footer .social-network a {
@@ -158,53 +120,8 @@ body {
     color: rgb(3, 44, 51);
 }
 
-
 @media screen and (max-width:1120px) {
-
-    .navbar {
-        position: relative;
-    }
-
-    .navbar .menu-bar {
-        display: block;
-        grid-column: 8 / 9;
-        font-size: 2em;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-
-    .navbar .menu {
-        position: fixed;
-        right: 0px;
-        top: 3.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 70vw;
-        height: 70vh;
-        transition: transform .3s ease-in-out;
-        transform: translate(110%);
-        z-index: 100;
-        overflow: hidden;
-        background: black;
-        color: white;
-        align-items: center;
-
-    }
-
-    .navbar .menu-toggle {
-        transform: translateX(0%);
-
-    }
-
-    .hero .info-content {
-        grid-column: 2 / 10;
-        grid-row: 2 / 8;
-    }
-
     .hero h1 {
         font-size: 3.5em;
     }
-
-
 }

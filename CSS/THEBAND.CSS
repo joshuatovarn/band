@@ -2,83 +2,32 @@
 
 * {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    background-color: #000;
 }
 
-h1 {
-    font-size: 40px;
-    font-weight: 400;
-    padding: 20px 0;
-    text-align: center;
-
-}
-
-.titulo {
+.title {
     color: rgb(3, 44, 51);
     font-size: 3.5em;
-    padding: 50px;
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.25rem 0;
 }
-
-.navbar {
-    background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-}
-
-.navbar .logo {
-    width: 60px;
-    grid-column: 2 / 3;
-    height: 60px;
-}
-
-.navbar .menu {
-    grid-column: 4 / 7;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar .menu li {
-    list-style: none;
-    margin-top: 20px;
-}
-
-.navbar .menu a {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 25px;
-    padding: 8px;
-    transition: all .3s ease-in-out;
-}
-
-.navbar .menu-bar {
-    grid-column: 8 / 9;
-    color: white;
-    margin-top: 20px;
-    display: none;
-
-}
-
-.navbar .menu a:hover {
-    background: rgb(3, 44, 51);
-}
-
 
 /***********************CONTAINER******************/
 
-.fondo {
-
+.hero {
+    height: 80vh;
     background-image: linear-gradient(to top, rgba(35, 34, 37, 0.466) 0%, rgba(46, 43, 45, 0.445) 100%), url(../IMG/te-nguyen-Wt7XT1R6sjU-unsplash.jpg);
     background-size: cover;
-    background-position: initial;
-    /*background: rgb(184, 190, 195);*/
-
+    background-position: center;
+    max-width: 100%;
+    
 }
 
 .content {
@@ -89,9 +38,7 @@ h1 {
     text-align: justify;
     font-size: 1em;
     font-weight: 300;
-
 }
-
 
 /*************************FOOTER*************************************/
 
@@ -102,7 +49,7 @@ h1 {
     background: black;
     color: white;
     grid-template-areas:
-        "listen-online""follow-me""social-network";
+        "listen-online";
 }
 
 .footer .listen-online {
@@ -111,13 +58,13 @@ h1 {
     justify-content: center;
     background-color: rgb(3, 44, 51);
     color: white;
-    grid-template-areas: "listen-online""follow-me""social-network";
-    padding: 26px;
+    grid-template-areas: "listen-online";
+    padding: 2rem;
 }
 
 .footer .listen-online .fas {
     font-size: 1.5em;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 .footer .listen-online a {
@@ -125,14 +72,13 @@ h1 {
     color: white;
 }
 
-
 .social-network {
     text-align: center;
 }
 
 .footer .social-network .fab {
     font-size: 1.5em;
-    margin-right: 15px;
+    margin-right: 1rem;
 }
 
 .footer .social-network a {
@@ -150,41 +96,6 @@ h1 {
 
 /*************************RESPONSIVE*************/
 @media screen and (max-width:1120px) {
-
-    .navbar {
-        position: relative;
-    }
-
-    .navbar .menu-bar {
-        display: block;
-        grid-column: 8 / 9;
-        font-size: 2em;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-
-    .navbar .menu {
-        position: fixed;
-        right: 0px;
-        top: 5%;
-        display: flex;
-        flex-direction: column;
-        width: 35vw;
-        height: 50%;
-        transition: transform .3s ease-in-out;
-        transform: translate(110%);
-        z-index: 100;
-        overflow: hidden;
-        background: black;
-        color: white;
-        align-items: center;
-        border-radius: 0 0 0 50px;
-    }
-
-    .navbar .menu-toggle {
-        transform: translateX(0%);
-
-    }
 
     .hero .info-content {
         grid-column: 2 / 10;
