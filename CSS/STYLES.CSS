@@ -17,10 +17,6 @@ body {
     background-color: #000;
 }
 
-.img-logo{
-    cursor: pointer;
-}
-
 .hero {
     height: 80vh;
     background-image: linear-gradient(to top, rgba(35, 34, 37, 0.466) 0%, rgba(46, 43, 45, 0.445) 100%), url(../IMG/te-nguyen-Wt7XT1R6sjU-unsplash.jpg);

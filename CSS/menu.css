@@ -23,6 +23,10 @@ a {
     font-weight: bold;
 }
 
+.img-logo{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     .nav__menu {
         position: fixed;
